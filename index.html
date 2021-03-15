@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css-desafio/main.css">
+        <title>Escuela Online Home</title>
+        <meta name="keywords" content="HTML, JS, PYTHON, PHP, LARAVEL, EDUCACION, DESARROLLO WEB">
+        <meta name="description=" content="Escuela Online creada en argentina, ayudando a nuestra comunidad a crecer en este mundo IT ofreciendo cursos de primera calidad y 100% Online" >
+  </head>
+  <body>
+    <header class="contenedor-header">
+      <div class="contenedor-navegador">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1><span class="tituloNavegador">#Escuela Online</span></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-lg-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cursos
+                  </a>
+                  <ul class="dropdown-menu animate slideIn bg-dark " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item bold" href="/phyton.html">Phyton</a></li>
+                    <li><a class="dropdown-item bold" href="/php.html">Php</a></li>
+                    <li><a class="dropdown-item bold" href="/javascript.html">Javascript</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item bold" href="/carrerafullstack.html">Carrera Fullstack</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contactarnos.html">Contactarnos</a>
+                </li>
+              </ul>
+              <div class="contenedor-navegacion-iconos">
+                <a href="https://www.facebook.com/" ><i class="fab fa-facebook-square icono-navegador"></i></a>
+                <a href="https://www.twitter.com/" ><i class="fab fa-twitter-square icono-navegador"></i></a>
+                <a href="https://www.pinterest.com/" ><i class="fab fa-pinterest-square icono-navegador"></i></a>
+              </div> <!--contenedor-navegador-->
+            </div>
+          </div>
+        </nav>
+      </div> <!--contenedor-navegador-->
+    </header>
+
+    <main class="main-index">
+        <div class="main-texto-principal">
+            <h2>Inversion educativa</h2>
+            <h3>Programacion 100% online</h3>
+            <p>Aprendizaje garantizado por los mejores profesiones del mercado. Educacion garantizada desde tu casa y a tu forma de aprender</p>
+            <div class="contenedor-contenido-boton">
+                <a href="#" class="contenido-boton">Registrarme</a>
+            </div>
+        </div>
+        <div class="main-imagen-principal"></div>  
+    </main>
+
+    
+    <section class="seccion-ventajas">
+        <div class="seccion-ventajas-parte-uno">
+            <div class="contenedor-seccion-ventajas-texto">
+                <h2>Podras elegir entre ambas</h2>
+                <div class="contenedor-programacion">
+                    <div class="contenedor-front">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Front-end</h3>
+                        <p>Todo relacion desde 0, empezando por html, css y Javascript.
+                          Hasta que aprendas a usar framework mas famosos del mercado como React js y Vue.js
+                        </p>
+                    </div>
+                    <div class="contenedor-front">
+                        <i class="fas fa-database"></i>
+                        <h3>Back-end</h3>
+                        <p>Todo relacionado con base de datos realaciones y no relacionales.
+                            Vas a ver todo desde alado del servidor. Y Aprenderas usar lenguajes Backend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonios-seccion">
+        <div class="estilo-testimonios">
+
+          <div class="container texto-testimonios">
+            <h3>Testimonios de nuestros estudiantes</h3>
+            <p>Preparamos a nuestros alumnos para que puedan insertarse a una empresa el dia de mañana, Sus testimonios nos alegra ya que significa que estamos haciendo bien nuestro trabajo. </p>
+          </div>
+          <div class="container">
+            <div class="vista-testimonial">
+              <div class="carousel  slide" id="testimonialCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+  
+                  <!--persona uno-->
+                  <div class="carousel-item active">
+                    <div class="block">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="user">
+                            <div class="image">
+                              <img src="img/pexels-pixabay-220453.jpg" alt="">
+                            </div>
+                            <div class="informacion-testomonial">
+                              <h3 class="user-name">Javier</h3>
+                              <h4 class="profesion-usuarios">Developer en Accenture</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="content">
+                            <p>"Realmente me inscribi porque no sabia mucho sobre programacion. Pero tener tutores y profesores tan predipuestos me han hecho crecer y pude insertarme sin problema alguno."</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!--persona uno-->
+                  <div class="carousel-item">
+                    <div class="block">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="user">
+                            <div class="image">
+                              <img src="img/pexels-justin-shaifer-1222271.jpg" alt="">
+                            </div>
+                            <div class="informacion-testomonial">
+                              <h3 class="user-name">Lucas</h3>
+                              <h4 class="profesion-usuarios">Semi Seniority en Nuribal</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="content">
+                            <p>"Estudiaba medicina pero siempre me intereso la programacion y el diseño web. Por suerte empece a estudiar en EscuelaOnline y pude lograr mis metas en este mundo del desarrollo con grandes profesionales"</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--persona uno-->
+                  <div class="carousel-item">
+                    <div class="block">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="user">
+                            <div class="image">
+                              <img src="img/pexels-andrea-piacquadio-3778603.jpg" alt="">
+                            </div>
+                            <div class="informacion-testomonial">
+                              <h3 class="user-name">Armando</h3>
+                              <h4 class="profesion-usuarios">Tester en Google</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="content">
+                            <p>"Desde chico me gustaba la programacion, pero no encontraba donde estudiar mas y aprender de profesionales. Desde que me inscribi mi vida cambio. Encontre mi camino gracias a ellos"</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                <a class="carousel-control-prev" data-bs-target="#testimonialCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" data-bs-target="#testimonialCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </section>
+
+    <section class="seccion-informacion">
+      <h2>Educacion, <span class="subrayado">Nunca antes vista</span></h2>
+      <div class="contenedor-seccion-informacion">
+        <div class="informacion-texto">
+          <h3>Clases, desde tu casa.</h3>
+          <p>Nuestros profesores son expertos en el tema, ya que trabajan en ellos. Aparte de eso tendras un tutor para corregir tus entregas donde recibiras un feedback</p>
+          <ul>
+            <li><i class="fas fa-check"></i> 100% online</li>
+            <li><i class="fas fa-check"></i> Seguimiento</li>
+            <li><i class="fas fa-check"></i> Grupos reducidos</li>
+          </ul>
+          <div class="contenedor-informacion-boton">
+            <a href="#" class="informacion-boton">Registrarme</a>
+          </div>
+        </div>
+        <div class="informacion-video">
+          <video autoplay muted loop>
+            <source src="/video/production ID_4495519.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-informacion-dos">
+      <div class="contenedor-seccion-informacion-dos">
+        <div class="informacion-video-dos">
+          <video autoplay muted loop>
+            <source src="/video/production ID_5200351.mp4" type="video/mp4">
+          </video>
+          <a href="#" class="informacion-boton-dos">Registrarme</a>
+        </div>
+        <div class="informacion-texto-dos">
+          <h3>Servicios de crecimento profesional.</h3>
+          <p>Aparte de trabajar con vos tus habilidades tecnicas, vamos a trabajar tus habilidades blandas par que puedas pasar cualquier entrevista de trabajo.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Cv Atractivo</li>
+            <li><i class="fas fa-check"></i> Perfil LinkedIn</li>
+            <li><i class="fas fa-check"></i> Asesor personal</li>
+          </ul>
+          <div class="contenedor-informacion-boton">
+            <a href="#" class="informacion-boton">Ver Cursos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Nuestros-Cursos">
+      <div class="contenedor-cursos">
+        <div class="titulo-texto">
+          <h1>Nuestro Cursos</h1>
+          <p>Ofrecemos el mejor servicio del mercado.Los mejores cursos online y en español. Podras Elegir entre las diferentes especialidades para ser un Fullstack .</p>
+        </div>
+
+        <div class="boxes">
+
+
+          <div class="box">
+            <div class="inner_box">
+              <a href="/php.html"><i class ="fab fa-laravel"></i></a href="">
+              <h3> Laravel</h3>
+            </div>
+            <p>Aprenderas desde lo mas basico de php hasta los detalles. Despues aprenderemos sobre el framework Laravel para que lo puedas aplicar en proyectos reales</p>
+          </div>
+
+          <div class="box">
+            <div class="inner_box">
+              <a href=""><i class ="fab fa-node-js"></i></a href="">
+              <h3>Javascript</h3>
+            </div>
+            <p>Aprenderas desde lo mas basico de phyton hasta los detalles. Despues aprenderemos sobre el framework Django para que lo puedas aplicar en proyectos reales</p>
+          </div>
+
+          <div class="box">
+            <div class="inner_box">
+              <a href=""><i class ="fab fa-python"></i></a href="">
+              <h3>Phyton</h3>
+            </div>
+            <p>Aprenderas desde lo mas basico de php hasta los detalles. Despues aprenderemos sobre el Back-end Node.js para que lo puedas aplicar en proyectos reales</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="acerca-nosotros">
+      <div class="acerca-nosotros-imagen">
+        <div class="acerca-nosotros-texto-oculto">
+          <h2>Aprender nunca fue tan facil</h2>
+          <p></p>
+          <div class="habilidades">
+              <span>Palabra</span>
+              <span>Palabra</span>
+              <span>Palabra</span>
+          </div>
+      </div>
+      </div>
+      <div class="acerca-nosotros-contenido">
+          <div class="acerca-nosotros-texto">
+              <h2>Aprender nunca fue tan facil</h2>
+              <p>Al ver la dificultad de las personas al poder ingresar a una empresa. Decidimos crear esta forma de aprender para sea mas facil el ingreso al mundo IT. Donde ofrecemos varios cursos y carreras para tu futuro</p>
+              <div class="habilidades">
+                  <a href="">Contactarnos</a>
+              </div>
+          </div>
+      </div>  
+    </section>
+
+
+
+    <section class="seccion-preguntas">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="contenedor-preguntas">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Como puedo ver los workshop?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Nosotros te vamos a hacer por nuestro canal de Slack acerca de todos los workshop semanales que tenes <strong> 100% gratis</strong> por ser parte de nosotros</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Las clases son 100% online o debo ir a cursar?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Las clases son 100% online asi que no deberas viajar. Ademas si no puedes ver las clases, las subiremos a una nube para que las puedas ver cuando puedas y cuando quieras. Aparte brindamos clases extras para que te puedas sacar las dudas</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Que pasa si termino el curso y lo quiero volver a hacer?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Por cursar con nosotros y tenes dudas de las clases vistas o lo queres volver a hacer. Te vamos a dar la posibilidad de <strong>Recursar sin costos</strong>, asi es como leiste sin cursos pero solo una vez. Todo esto es para que lo puedas aprender!.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+               ¿Como descargo el materialo o como puedo aprender mas?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">No te preocupes por eso, nosotros te vamos a dar todo el material que necesites. Aparte tenemos clases grabadas y cursos para que tomes para que puedas seguir avanzando.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor-final">
+      <h3 class="titulo-final" href="">¿Estas listo para el cambio de tu vida?</h3>
+      <a href="#" class="contenido-boton">Inscribirse</a>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container  text-md-left">
+        <div class="row text-right text-md-left">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Cursos</h5>
+            <p>
+              <a href="" class="text-white">Javascript</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Php</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Phyton</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Carreras</h5>
+            <p>
+              <a href="" class="text-white">Fullstack</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Data Science</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Ingenieria en Software</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Nosotros</h5>
+            <p>
+              <a href="" class="text-white">Equipo</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Profesores</a>
+            </p>
+            <p>
+              <a href="" class="text-white">ONGs</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Contactos</h4>
+            <p>
+              
+            </p>
+            <p>
+                <a href="" class="text-white"><i class="fas fa-home mr-3 icono-footer"></i> Pagina Oficial</a>
+            </p>  
+            <p>
+                <a href="" class="text-white"><i class="fab fa-whatsapp icono-footer"></i> Whatsapp</a>
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+
+          <div class="text-center">
+            <p>Copyright &copy Todos los derechos reservados por
+              <a href="">
+                <strong class="texto-footer-titulo">#EscuelaIT</strong>
+              </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </footer><!--Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

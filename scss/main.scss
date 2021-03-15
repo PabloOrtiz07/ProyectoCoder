@@ -1,0 +1,644 @@
+@import 'componentes/variable';
+
+.caracteristicas-php {
+
+
+    &{
+        margin-top: 5em;
+        min-height:90vh;
+        color: $negro;
+        display: grid;
+        grid-template-rows: 40% 30%;
+        background-color: $blanco;
+    }
+
+}
+
+.contenedor-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.contenedor-texto_titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contenedor-texto_parrafo {
+    font-size: 1rem;
+    color: $negro;
+    font-weight: bold;
+}
+
+.contenedor-contenido {
+    margin: auto 5em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5em;
+}
+
+.contenedor-elemento_icono {
+    color: $colorTitulo;
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+.contenedor-elemento_parrafo {
+    color: #797878;
+    font-weight: bold;
+}
+
+/*********************Seccion preguntas**********/
+
+.seccion-preguntas {
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &{
+        min-height: 100vh;
+        background-color: #262626;
+        color: $blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .contenedor-preguntas {
+      width: 80%;
+      height: 20em;
+    }
+    
+    .borde-negro {
+        border-bottom: 1px solid #b9b8b8;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        color: $blanco;
+        font-weight: bold;
+    }
+
+    a i {
+        color: $blanco;
+    }
+
+    .accordion-item {
+        margin-bottom: 2em;
+        border-bottom: 1px solid $gris;
+ 
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $blanco;
+        background-color: #262626;
+    }
+
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: $gris;
+        outline: 0;
+        color: $blanco;
+    }
+
+    .accordion-button::after {
+        background-image: url("https://i0.wp.com/www.vivesmart.com/wp-content/uploads/2019/03/white-down-arrow-png-2.png?ssl=1");
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image:  url("https://i0.wp.com/www.vivesmart.com/wp-content/uploads/2019/03/white-down-arrow-png-2.png?ssl=1");
+        transform: rotate(180deg);
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+    
+}
+
+/***************Seccion cursos*******************/
+
+.Nuestros-Cursos {
+
+    &{
+    min-height: 100vh;
+    color: $blanco;
+    background-color: $blanco;
+    }
+
+    .contenedor-cursos {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #262626;
+        overflow: hidden;
+        padding-bottom: 5em;
+    }
+
+    .titulo-texto {
+       width: 70%;
+       margin: 4em auto;
+       text-align: center;
+    }
+
+    .titulo-texto h1 {
+        margin-bottom: 50px;
+        position: relative;
+
+    }
+
+    .titulo-texto h1::before {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $colorTitulo;
+        width: 100px;
+        height: 3px;
+
+    }
+
+    .titulo-texto p {
+        font-size: 18px;
+        color: $gris;
+    }
+    .boxes {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-row-gap: 1em;
+        background-color: #262626;
+    }
+
+    
+
+    @media screen and (min-width: 480px){
+        .boxes {
+            width: 70%;
+
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        .boxes {
+            width: 60%;
+
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        .boxes {
+            width: 50%;
+
+        }
+    }
+
+
+    .box {
+        height: 20em;
+        width: 100%;
+        border: 2px solid $colorTitulo;
+        position: relative;
+    }
+
+    @media screen and (min-width: 1024px){
+        .boxes {
+            width: 80%;
+            grid-template-columns: repeat(3,1fr);
+            grid-row-gap: 0;
+            grid-template-rows: 1fr;
+            grid-template-rows: 300px;
+            grid-gap: 0 15px;
+        }
+
+        .box {
+            height: inherit;
+            border: 2px solid #b9b8b8;
+            position: relative;
+        }
+    }
+
+    .box .inner_box {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        color: lightgray;  
+        transition: .5s ;
+    }
+
+    .inner_box a {
+        background-color: #262626;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 4rem;
+    }
+
+    .inner_box i {
+        color: $colorTitulo;
+    }
+
+    .box p {
+        font-size: 1rem;
+        color: $blanco;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    @media screen and (min-width: 768px){
+        .box p {
+
+            width: 80%;
+
+        }
+    }
+
+    .box:hover {
+        border-color: $colorTitulo;
+    }
+
+    .box:hover .inner_box {
+        margin-top: -130px;
+        color: $colorTitulo;
+    }
+    
+    .box:hover p {
+        opacity: 1;
+        margin-top: -2em;
+        transition: .4s;
+    }
+    
+
+
+    @media screen and (min-width: 1024px){
+        .box {
+            border: 2px solid lightgray;
+            position: relative;
+        }
+    }
+
+ 
+
+    @media screen and (min-width: 1024px){
+        .box .inner_box {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            color: lightgray;  
+            transition: .5s ;
+          }
+
+        .inner_box a {
+            background-color: #262626;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 4rem;
+        }
+    
+        .inner_box i {
+            color: $colorTitulo;
+        }
+        
+    
+        .box p {
+            font-size: 18px;
+            color: $blanco;
+            word-break: break-all;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            text-align-last: center;
+            margin-top: 100px;
+            opacity: 0;
+        }
+    
+        .box:hover {
+            border-color: $colorTitulo;
+        }
+    
+        .box:hover .inner_box {
+            margin-top: -130px;
+            color: $colorTitulo;
+        }
+    
+        .box:hover p {
+            opacity: 1;
+            margin-top: -2em;
+            transition: .4s;
+        }
+    }
+
+}
+
+/**********seccion-empresas**********/
+
+.seccion-empresas {
+    & {
+        min-height: 40vh;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        color: $colorTitulo;
+        background-color: $colorTitulo;
+    }
+
+    .empresas-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .empresas-texto h2{
+        font-weight: bold;
+        font-size: 2rem;
+        color: $blanco;
+    }
+
+    .empresas-texto p{
+        color: $blanco
+    }
+
+    .empresas-iconos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+        margin-bottom: 4em;
+    }
+
+    .empresas-iconos i{
+        font-size: 5rem;
+        color: $negro;
+    }
+
+}
+
+/***************Seccion cursos*******************/
+
+.Nuestros-Cursos-proximos {
+
+    &{
+        
+    min-height: 100vh;
+    color: $blanco;
+    background-color: $blanco;
+    }
+
+    .contenedor-cursos {
+        width: 100%;
+        height: 100vh;
+        background-color: $negro;
+        overflow: hidden;
+    }
+
+    .titulo-texto {
+       width: 70%;
+       margin: 4em auto;
+       text-align: center;
+    }
+
+    .titulo-texto h1 {
+        margin-bottom: 50px;
+        position: relative;
+
+    }
+
+    .titulo-texto h1::before {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $colorTitulo;
+        width: 100px;
+        height: 3px;
+
+    }
+
+    .titulo-texto p {
+        font-size: 18px;
+        color: $gris;
+    }
+    .boxes {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 300px;
+        grid-gap: 0 15px;
+    }
+
+    .box {
+        border: 2px solid lightgray;
+        position: relative;
+    }
+
+    .box .inner_box {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: lightgray;  
+      transition: .5s ;
+    }
+
+    .inner_box a {
+        background-color: $negro;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 4rem;
+    }
+
+    .inner_box i {
+        color: $colorTitulo;
+    }
+    
+
+    .box p {
+        font-size: 18px;
+        color: $blanco;
+        text-align: justify;
+        word-break: break-all;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align-last: center;
+        margin-top: 100px;
+        opacity: 0;
+    }
+
+    .box:hover {
+        border-color: $colorTitulo;
+    }
+
+    .box:hover .inner_box {
+        margin-top: -130px;
+        color: $colorTitulo;
+    }
+
+    .box:hover p {
+        opacity: 1;
+        margin-top: -2em;
+        transition: .4s;
+    }
+
+}
+
+/*************Seccion trayectoria**************/
+
+.seccion-trayectoria-php {
+
+    & {
+        background-color: $blanco;
+        min-height: 100vh;
+        color: $negro;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    span {
+        color: $negro;
+        border-bottom: 3.5px solid $colorTitulo;
+        padding-bottom: .2em;
+    }
+    .trayectoria-contenido {
+        margin: 8em 3em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .trayectoria-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        margin-left: 2em;
+    }
+
+    .trayectoria-texto h3{
+        font-size: 1.2rem;
+    }
+
+    .trayectoria-texto i {
+       margin-right: .5em;
+       font-size: 1.4rem;
+       color: $colorTitulo;
+    }
+
+    .trayectoria-imagen {
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/img/pexels-canva-studio-3194523.jpg);
+    }
+
+}
+
+.seccion-trayectoria-todos {
+
+    & {
+        box-shadow: 0px 15px 10px -15px rgb(207, 206, 206);       
+        background-color: $blanco;
+        min-height: 75vh;
+        color: $negro;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .trayectoria-contenido {
+        margin: 2em .5em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .trayectoria-texto {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .trayectoria-texto h4{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #d814f2;
+    }
+
+    .trayectoria-texto h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .trayectoria-texto p {
+       font-size: 1.2rem;
+    }
+
+    .trayectoria-texto .boton-todos {
+        display: flex;
+        justify-content: flex-end;
+
+     }
+
+     .boton-todos a {
+        border-radius: 10px;
+        margin-right: .8em;
+        padding: 1em 2em;
+        background-color: #8ff14e;
+        font-weight: bold;
+        color: $blanco;
+        transition: .4s all;
+     }
+
+     .boton-todos a:hover {
+        color: $negro;
+     }
+
+    .trayectoria-imagen {
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/img/pexels-andrea-piacquadio-3769021.jpg);
+    }
+}
