@@ -9,7 +9,7 @@
 .contenedor-texto {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-top: 2em;
   flex-direction: column;
   gap: 1em; }
 
@@ -19,7 +19,7 @@
 
 .contenedor-texto_parrafo {
   font-size: 1rem;
-  color: #000000;
+  color: #0c9bb8;
   font-weight: bold; }
 
 .contenedor-contenido {
@@ -31,7 +31,10 @@
 .contenedor-elemento_icono {
   color: #00ccf5;
   font-size: 3rem;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  display: flex;
+  justify-content: center;
+  padding-right: 1em; }
 
 .contenedor-elemento_parrafo {
   color: #797878;
@@ -39,22 +42,32 @@
 
 /*********************Seccion preguntas**********/
 .seccion-preguntas h2 {
-  font-size: 2.5rem;
-  font-weight: bold; }
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center; }
+
+@media (min-width: 480px) {
+  .seccion-preguntas h2 {
+    font-size: 2.5rem; } }
 
 .seccion-preguntas {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #262626;
   color: #ffff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3em; }
+  gap: 3em;
+  overflow: hidden; }
 
 .seccion-preguntas .contenedor-preguntas {
-  width: 80%;
-  height: 20em; }
+  width: 85%; }
+
+@media (min-width: 480px) {
+  .seccion-preguntas .contenedor-preguntas {
+    width: 85%;
+    height: 20em; } }
 
 .seccion-preguntas .borde-negro {
   border-bottom: 1px solid #b9b8b8; }
@@ -63,7 +76,8 @@
   outline: none;
   border: none;
   color: #ffff;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1rem; }
 
 .seccion-preguntas a i {
   color: #ffff; }
@@ -138,11 +152,11 @@
 
 @media screen and (min-width: 480px) {
   .Nuestros-Cursos .boxes {
-    width: 60%; } }
+    width: 70%; } }
 
 @media screen and (min-width: 768px) {
   .Nuestros-Cursos .boxes {
-    width: 50%; } }
+    width: 60%; } }
 
 @media screen and (min-width: 768px) {
   .Nuestros-Cursos .boxes {

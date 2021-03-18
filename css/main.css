@@ -62,6 +62,18 @@ li {
     color: var(--blanco);
 }
 
+
+.nav-link:hover {
+    transition: .2s all;
+    color: var(--colorTitulo);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--colorTitulo);
+    transition: .6s all;
+}
+
+
 .tituloNavegador {
     font-weight: 700;
     margin-left: .2em;
@@ -101,6 +113,7 @@ span {
     0% {
       transform: translateY(-2rem);
       opacity: 0;
+      
     }
     100% {
       transform:translateY(0rem);
@@ -131,6 +144,14 @@ span {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
 }
+
+.dropdown-item:hover {
+    transition: .5s all;
+    background-color: var(--colorTitulo);
+    color: var(--blanco);
+}
+
+
 
 .contenedor-contenido .texto-contenido h2 {
     font-size: 1.7rem;
@@ -218,8 +239,8 @@ span {
 }
 
 .icono-navegador {
-    color: var(--blanco);
-    font-size: 1.4rem;
+    color: var(--colorTitulo);
+    font-size: 1.5rem;
 }
 
 .icono-navegador:hover {
@@ -417,11 +438,18 @@ span {
     position: relative;
     top: -.5em;
     width: 100%;
-    height: 27em;
+    height: 30em;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     padding-right: 1em;
     padding-left: 1em;
 }
+
+@media (min-width: 768px) {
+    .contenedor-seccion-ventajas-texto {
+        height: 27em;
+    }
+}
+
 
 @media (min-width: 768px) {
     .contenedor-seccion-ventajas-texto {
@@ -516,7 +544,7 @@ span {
 }
 
 .contenedor-front p , .contenedor-back p{
-    font-size: .9rem;
+    font-size: .85rem;
 }
 
 @media (min-width: 480px) {
@@ -543,7 +571,7 @@ span {
 .estilo-testimonios{
     min-height: 70vh;
     display: grid;
-    grid-template-rows: 37% 70%;
+    grid-template-rows: 28% 70%;
     grid-template-columns: 1fr;
     overflow: hidden;
     background-image: linear-gradient(to bottom, black 0%, transparent 100%);
@@ -778,10 +806,20 @@ span {
 .seccion-informacion {
     min-height: 75vh;
     color: var(--negro);
+    overflow: hidden;
+
+}
+@media (min-width: 1024px) {
+    .seccion-informacion {
+        margin-bottom: -4.5em;
+    }
+    
 }
 
+
+
 .seccion-informacion h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 1em;
     text-align: center; 
     font-weight: bold;
@@ -812,14 +850,15 @@ span {
 }
 
 .contenedor-seccion-informacion {
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
 }
 
 
 @media (min-width: 1024px) {
     .contenedor-seccion-informacion {
+        display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr;
     }
@@ -827,23 +866,33 @@ span {
 
 
 .informacion-texto{
-    margin-top: 4em;
+    margin-top: 2em;
     margin-left: 1.2em;
+    margin-bottom: 1em;
     display: flex;
-    gap: 2em;
+    gap: 1em;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
 
-.informacion-texto h3{
-    font-weight: bold;
-    font-size: 1.7rem;
+
+@media (min-width: 768px) {
+    .informacion-texto{
+        margin-top: 4em;
+        margin-left: 1.2em;
+        display: flex;
+        gap: 2em;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
 }
 
 .informacion-texto h3{
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .informacion-texto p{
@@ -852,14 +901,11 @@ span {
 
 @media (min-width: 1024px) {
     .informacion-texto p{
-        width: 100%;
+        width: 85%;
     }
-}
-
-@media (min-width: 1024) {
-    .informacion-texto p{
+    .informacion-texto h3{
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -915,14 +961,13 @@ span {
 }
 
 .informacion-video video {
-    margin-top:  0em;
-    width: 95%;
+    width: 90%;
     margin-left: 1em;
 }
 
 @media (min-width: 480px) {
     .informacion-video video {
-        margin-top:  -1em;
+        max-width: 80%;
     } 
 }
 @media (min-width: 1024px) {
@@ -930,6 +975,7 @@ span {
         margin-top:  8em;
         margin-left: 5em;
         width: 35em;
+
     }
 }
 
@@ -939,6 +985,7 @@ span {
 .seccion-informacion-dos {
     min-height: 88vh;
     color: var(--negro);
+    overflow: hidden;
 }
 
 .contenedor-seccion-informacion-dos {
@@ -982,7 +1029,7 @@ span {
 
 @media (min-width: 1024px) {
     .informacion-texto-dos p{
-        width: 100%;
+        width: 93%;
     }
 }
 
@@ -994,6 +1041,8 @@ span {
 @media (min-width: 1024px) {
     .informacion-texto-dos h3{
         font-size: 2rem;
+        width: 95%;
+
     }
     
 }
@@ -1021,13 +1070,27 @@ span {
     font-family: var(--fuenteParrafo);
     font-size: 1.2rem;
     background-color: var(--colorTitulo);
-    padding: .5em 2em;
+    padding: .5em 1em;
     border-radius: 1rem;
     color: var(--blanco);
     font-weight: 700;
     margin-bottom: 2em;
-    width: 95%;
+    width: 90%;
     margin: 0 1em 3em ;
+}
+
+@media (min-width: 480px) {
+    .informacion-boton-dos {
+        padding: .5em 2em;
+        max-width: 80%;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .informacion-boton-dos {
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1039,6 +1102,7 @@ span {
 .informacion-boton-dos:hover {
     cursor: pointer;
     color: var(--negro);
+    transition: .8s all;
 
 }
 
@@ -1049,8 +1113,15 @@ span {
 .informacion-video-dos video {
     margin-top:  1em;
     margin-bottom: 3em;
-    width: 95%;
+    width: 90%;
     margin-left: 1em;
+}
+
+
+@media (min-width: 480px) {
+    .informacion-video-dos video {
+        max-width: 80%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1066,6 +1137,7 @@ span {
     min-height: 100vh;
     display: grid;
     background-color: var(--blanco);
+    overflow: hidden;
 }
 
 
@@ -1089,6 +1161,8 @@ span {
     padding: 4em 8em;
     background-color: #242424;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    border: 1px solid #242424;
+    border-radius: 15px;
 }
 
 .acerca-nosotros-texto h2{
@@ -1096,25 +1170,75 @@ span {
     display: block;
 }
 
+
 .acerca-nosotros-texto p{
     color: var(--gris);
 }
 
 .acerca-nosotros-texto-oculto {
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-    text-align: center;
     width: 90%;
-    padding: 3em 1em;
-    background-color: var(--blanco);
+    padding: 3em 2em;
+    background-color: #242424;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    border: 1px solid #242424;
+    border-radius: 15px;
+}
+
+
+@media (min-width: 480px) {
+    .acerca-nosotros-texto-oculto {
+        padding: 4em 3em;
+
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .acerca-nosotros-texto-oculto {
+        width: 90%;
+        padding: 4em 8em;
+
+    }
+}
+
+.acerca-nosotros-texto-oculto h2{
+    font-size: 1.4rem;
+}
+.acerca-nosotros-texto-oculto p{
+    font-size: 1rem;
+    width: 90%;
+}
+
+.acerca-nosotros-texto-oculto span{
+    display: block;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .acerca-nosotros-texto-oculto span{
+        display: inline;
+
+    }
+}
+
+
+@media (min-width: 480px) {
+   
+    .acerca-nosotros-texto-oculto h2{
+        font-size: 1.8rem;
+        display: block;
+    }
+}
+
+.acerca-nosotros-texto-oculto p{
+    color: var(--gris);
 }
 
 @media (min-width: 480px) {
     .acerca-nosotros-texto-oculto {
         width: 75%;
         padding: 4em;
-    }
-    .acerca-nosotros-imagen {
-    
     }
 }
 
@@ -1126,7 +1250,7 @@ span {
     }
 
     .acerca-nosotros { 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 55% 45%;
     }
     
     .acerca-nosotros-contenido {
@@ -1146,13 +1270,13 @@ span {
     
 }
 
-.habilidades {
+.contactarnos-contenedor {
     display: flex;
     justify-content: center;
     gap: 1em;
 }
 
-.habilidades  a{
+.contactarnos-contenedor  a{
     border-radius: .5em;
     padding: 1em 4em;
     border: 1px solid var(--negro);
@@ -1162,22 +1286,34 @@ span {
     transition: all .5s;
 }
 
-.habilidades  a:hover{
+.contactarnos-contenedor  a:hover{
     color: var(--negro);
 }
 
 @media (min-width: 480px) {
-    .habilidades {
+    .contactarnos-contenedor {
         gap: 3em;
     }
 }
 
+.contactarnos-contenedor {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .contactarnos-contenedor {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 992px) {
-    .habilidades {
+    .contactarnos-contenedor {
         justify-content: flex-start;
         align-items: flex-start;
     }
 }
+
 /************Seccion Footer***************/
 
 .texto-footer-titulo {
@@ -1221,8 +1357,16 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 .pagina-contacarnos {
     min-height: 100vh;
-    color: var(--negro);
-    background-color: var(--blanco);
+    color: var(--blanco);
+    background-image: url(/img/pexels-fauxels-3183183.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.pagina-contacarnos-color {
+    min-height: 100vh;
+    background-color: rgba(27, 27, 27, 0.7);
 }
 
 .contenedor-principal-formulario {
@@ -1341,7 +1485,7 @@ php.html**************************************/
 
 .main-php-imagen {
     height: 100vh;
-    background-image: url(/img/pexels-olia-danilevich-4974915.jpg);
+    background-image: url(/img//pexels-buro-millennial-1438081.jpg);
     background-size: contain;
     background-position: center left 425px ;
     background-repeat: no-repeat;
@@ -1349,7 +1493,7 @@ php.html**************************************/
 
 .main-php-color {
     height: 100vh;
-    background-image: linear-gradient(to right, black 30%, transparent 100%);
+    background-image: linear-gradient(to right, black 45%, transparent 100%);
 }
 
 .main-php-texto {
@@ -1436,7 +1580,7 @@ php.html**************************************/
 
 .seccion-ventajas-php {
     background-color: var(--negro);
-    min-height: 100vh;
+    min-height: 80vh;
     box-shadow: 0px 15px 10px -15px rgb(110, 110, 110);    
 
 }
@@ -1449,10 +1593,12 @@ php.html**************************************/
 .contenedor-seccion-ventajas-php-texto {
     color: var(--negro);
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 35em;
     background-color: white;
-    top: 4em;
+    bottom: 5.5em;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .contenedor-seccion-ventajas-php-texto h2 {
@@ -1623,22 +1769,42 @@ php.html**************************************/
 }
 
 .contenedor-final h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--blanco);
     margin-right: .4em;
-    font-weight: bold;;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 480px){
+
+    .contenedor-final h3{
+        text-align: inherit;
+        font-size: 2.5rem;
+    }
+
 }
 
 
-
 .contenedor-final a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     font-weight: bold;
     color:var(--blanco);
     padding: 1em 2em;
     border: 2px solid var(--blanco);
+    width: 55%;
 }
+
+@media (min-width: 480px){
+
+    .contenedor-final a {
+        font-size: 1.5rem;
+        width: inherit;
+    }
+
+}
+
 
 .contenedor-final a:hover {
     color: var(--negro);

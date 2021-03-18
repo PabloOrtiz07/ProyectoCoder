@@ -17,7 +17,7 @@
 .contenedor-texto {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 2em;
     flex-direction: column;
     gap: 1em;
 }
@@ -30,7 +30,7 @@
 
 .contenedor-texto_parrafo {
     font-size: 1rem;
-    color: $negro;
+    color: #0c9bb8;
     font-weight: bold;
 }
 
@@ -45,6 +45,9 @@
     color: $colorTitulo;
     font-size: 3rem;
     margin-bottom: .5em;
+    display: flex;
+    justify-content: center;
+    padding-right: 1em;
 }
 
 .contenedor-elemento_parrafo {
@@ -57,12 +60,22 @@
 .seccion-preguntas {
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         font-weight: bold;
+        text-align: center;
+    }
+
+    @media (min-width: 480px){
+
+        h2 {
+            font-size: 2.5rem;
+
+        }
+    
     }
 
     &{
-        min-height: 100vh;
+        min-height: 90vh;
         background-color: #262626;
         color: $blanco;
         display: flex;
@@ -70,11 +83,23 @@
         align-items: center;
         flex-direction: column;
         gap: 3em;
+        overflow: hidden;
     }
+
+    
     .contenedor-preguntas {
-      width: 80%;
-      height: 20em;
+      width: 85%;
     }
+
+    @media (min-width: 480px){
+
+        .contenedor-preguntas {
+            width: 85%;
+            height: 20em;
+          }
+    }
+
+    
     
     .borde-negro {
         border-bottom: 1px solid #b9b8b8;
@@ -85,6 +110,7 @@
         border: none;
         color: $blanco;
         font-weight: bold;
+        font-size: 1rem;
     }
 
     a i {
