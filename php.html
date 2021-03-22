@@ -18,7 +18,7 @@
       <div class="contenedor-navegador">
         <nav class="navbar navbar-expand-lg navbar-dark ">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h1><span class="tituloNavegador">#Escuela Online</span></h1></a>
+            <a class="navbar-brand" href="#"><h1 class="tituloNavegador">#EscuelaOnline</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +32,7 @@
                     Cursos
                   </a>
                   <ul class="dropdown-menu animate slideIn bg-dark " aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item bold" href="/phyton.html">Phyton</a></li>
+                    <li><a class="dropdown-item bold" href="/phyton.html">Python</a></li>
                     <li><a class="dropdown-item bold" href="/php.html">Php</a></li>
                     <li><a class="dropdown-item bold" href="/javascript.html">Javascript</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -161,11 +161,11 @@
       <h2>¿<span>Que voy </span>a aprender?</h2>
       <div class="trayectoria-contenido">
         <div class="trayectoria-texto">
-         <h3> <i class="far fa-check-square"></i> Fundamentos de la Programacion</h3>
-         <h3> <i class="far fa-check-square"></i>Programacion Orientada a Objetos</h3>
-         <h3> <i class="far fa-check-square"></i>MySQL</h3>
-         <h3> <i class="far fa-check-square"></i>Programacion Fullstack</h3>
-         <h3> <i class="far fa-check-square"></i>Evaluacion Final</h3>
+         <h3> <i class="far fa-check-square"></i><span>Fundamentos de la Programacion</span></h3>
+         <h3> <i class="far fa-check-square"></i><span>Programacion Orientada a Objetos</span></h3>
+         <h3> <i class="far fa-check-square"></i><span>MySQL</span></h3>
+         <h3> <i class="far fa-check-square"></i><span>Programacion Fullstack</span></h3>
+         <h3> <i class="far fa-check-square"></i><span>Evaluacion Final</span></h3>
         </div>
       <div class="trayectoria-imagen"></div>
       </div>
@@ -202,8 +202,8 @@
                 <div class="separacion-precios-titulo"></div>
                 <ul class="contenido list-unstyled mt-1 mb-5 lista-beneficios">
                   <li><h3>Beneficios</h3></li>
-                  <li><i class="fas fa-check"></i>Acceso a nuestra bibloteca</li>
-                  <li><i class="fas fa-check"></i>Mejoramiento del cv</li>
+                  <li><i class="fas fa-check"></i> Acceso a nuestra bibloteca</li>
+                  <li><i class="fas fa-check"></i> Mejoramiento del cv</li>
                   <li><i class="fas fa-check"></i> Proyectos en grupo</li>
                   <div class="separacion-precios"></div>
                   <li><h3>Beneficios exclusivos del plan</h3></li>
@@ -225,7 +225,7 @@
                 <div class="separacion-precios-titulo"></div>
                 <ul class="contenido list-unstyled mt-1 mb-5 lista-beneficios">
                   <li><h3>Beneficios</h3></li>
-                  <li><i class="fas fa-check"></i>Acceso a nuestra bibloteca</li>
+                  <li><i class="fas fa-check"></i> Acceso a nuestra bibloteca</li>
                   <li><i class="fas fa-check"></i> Proyectos de ONGs</li>
                   <li><i class="fas fa-check"></i> Acceso a consultorias</li>
                   <div class="separacion-precios"></div>
@@ -255,7 +255,7 @@
           </ul>
           <div class="contenedor-informacion-boton">
             <a href="#" class="informacion-boton">Registrarme</a>
-            <a href="#" class="informacion-boton">Ver Cursos</a>
+            <a href="#Nuestros-Cursos" class="informacion-boton">Ver Cursos</a>
           </div>
         </div>
         <div class="informacion-video">
@@ -273,6 +273,7 @@
           <video autoplay muted loop>
             <source src="/video/production ID_5200351.mp4" type="video/mp4">
           </video>
+          <a href="#" class="informacion-boton-dos">Registrarme</a>
         </div>
         <div class="informacion-texto-dos">
           <h3>Servicios de crecimento profesional.</h3>
@@ -283,17 +284,17 @@
             <li><i class="fas fa-check"></i> Asesor personal</li>
           </ul>
           <div class="contenedor-informacion-boton">
-            <a href="#" class="informacion-boton">Ver Cursos</a>
+            <a href="#Nuestros-Cursos" class="informacion-boton">Ver Cursos</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="Nuestros-Cursos-proximos">
+    <section id="Nuestros-Cursos" class="Nuestros-Cursos">
       <div class="contenedor-cursos">
         <div class="titulo-texto">
-          <h1>Nuestro Proximos Cursos</h1>
-          <p>Ofrecemos el mejor servicio del mercado.Los mejores cursos online y en español. Podras Elegir entre las diferentes especialidades para ser un Fullstack .</p>
+          <h1>Otros cursos que podrian interesarte</h1>
+          <p>Te ofrecemos estos cursos para que puedas actualizarle a lo que pide el mercado hoy en dia</p>
         </div>
 
         <div class="boxes">
@@ -301,29 +302,30 @@
 
           <div class="box">
             <div class="inner_box">
-              <a href="/php.html"><i class ="fab fa-react"></i></a href="">
-              <h3> Laravel</h3>
+              <a href="/php.html"><i class="fab fa-angular"></i>
+              </a href="">
+              <h3>Angular</h3>
             </div>
-            <p>Aprenderas desde lo mas basico de php hasta los detalles. Despues aprenderemos sobre el framework Laravel para que lo puedas aplicar en proyectos reales</p>
+            <p>Angular es un framework que usa google para el desarrollo de sus paginas. Aprender este tipo de framework te ayudara a darle estilo a tu pagina</p>
           </div>
 
           <div class="box">
             <div class="inner_box">
-              <a href=""><i class ="fab fa-angular"></i></a href="">
-              <h3>Javascript</h3>
+              <a href=""><i class="fab fa-react"></i>
+              </a href="">
+              <h3>React.js</h3>
             </div>
-            <p>Aprenderas desde lo mas basico de phyton hasta los detalles. Despues aprenderemos sobre el framework Django para que lo puedas aplicar en proyectos reales</p>
+            <p>React.js es una bibloteca de javascript. te ayudara a poder agilizar aun mas la creacion de paginas web</p>
           </div>
 
           <div class="box">
             <div class="inner_box">
-              <a href=""><i class ="fab fa-vuejs"></i></a href="">
-              <h3>Phyton</h3>
+              <a href=""><i class="fab fa-vuejs"></i>
+              </a href="">
+              <h3>Vue.js</h3>
             </div>
-            <p>Aprenderas desde lo mas basico de php hasta los detalles. Despues aprenderemos sobre el Back-end Node.js para que lo puedas aplicar en proyectos reales</p>
+            <p>Vue.js es otra libreria famosa de javascript. Su implementacion en tus paginas web haran que funcione mas rapido, gracias a su alta versatilidad</p>
           </div>
-
-          
 
         </div>
       </div>
@@ -333,26 +335,23 @@
     <section class="acerca-nosotros">
       <div class="acerca-nosotros-imagen">
         <div class="acerca-nosotros-texto-oculto">
-          <h2>Contactanos!</h2>
-          <p></p>
-          <div class="habilidades">
-              <span>Palabra</span>
-              <span>Palabra</span>
-              <span>Palabra</span>
+          <h2>Aprender nunca <span>fue tan facil</span></h2>
+          <p>Al ver la dificultad de las personas al poder ingresar a una empresa. Decidimos crear esta forma de aprender para sea mas facil el ingreso al mundo IT. Donde ofrecemos varios cursos y carreras para tu futuro</p>
+          <div class="contactarnos-contenedor ">
+              <a href="contactarnos.html">Contactarnos</a>
           </div>
       </div>
       </div>
       <div class="acerca-nosotros-contenido">
           <div class="acerca-nosotros-texto">
-              <h2>Contactanos!</h2>
+              <h2>Aprender nunca fue tan facil</h2>
               <p>Al ver la dificultad de las personas al poder ingresar a una empresa. Decidimos crear esta forma de aprender para sea mas facil el ingreso al mundo IT. Donde ofrecemos varios cursos y carreras para tu futuro</p>
-              <div class="habilidades">
-                  <a href="/contactarnos.html">Contactarnos</a>
+              <div class="contactarnos-contenedor">
+                  <a href="">Contactarnos</a>
               </div>
           </div>
       </div>  
     </section>
-
 
 
 
@@ -415,6 +414,18 @@
       <div class="container  text-md-left">
         <div class="row text-right text-md-left">
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Nosotros</h5>
+            <p>
+              <a href="" class="text-white">Equipo</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Profesores</a>
+            </p>
+            <p>
+              <a href="" class="text-white">ONGs</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Cursos</h5>
             <p>
               <a href="" class="text-white">Javascript</a>
@@ -439,28 +450,20 @@
               <a href="" class="text-white">Ingenieria en Software</a>
             </p>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Nosotros</h5>
-            <p>
-              <a href="" class="text-white">Equipo</a>
-            </p>
-            <p>
-              <a href="" class="text-white">Profesores</a>
-            </p>
-            <p>
-              <a href="" class="text-white">ONGs</a>
-            </p>
-          </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold texto-footer-titulo">Contactos</h4>
             <p>
               
             </p>
             <p>
-                <a href="" class="text-white"><i class="fas fa-home mr-3 icono-footer"></i> Pagina Oficial</a>
+                <a href="index.html" class="text-white"><i class="fas fa-home mr-3 icono-footer"></i> Inicio</a>
             </p>  
+
             <p>
-                <a href="" class="text-white"><i class="fab fa-whatsapp icono-footer"></i> Whatsapp</a>
+              <a href="https://www.Instagram.com/" class="text-white"><i class="fab fa-instagram icono-footer"></i> Instagram</a>
+            </p>
+            <p>
+              <a href="https://www.Facebook.com/" class="text-white"><i class="fab fa-facebook-square icono-footer"></i> Facebook</a>
             </p>
           </div>
         </div>
@@ -470,7 +473,7 @@
           <div class="text-center">
             <p>Copyright &copy Todos los derechos reservados por
               <a href="">
-                <strong class="texto-footer-titulo">#EscuelaIT</strong>
+                <strong class="texto-footer-titulo">#EscuelaOnline</strong>
               </a>
             </p>
 

@@ -359,39 +359,6 @@
     margin-top: -2em;
     transition: .4s; } }
 
-/**********seccion-empresas**********/
-.seccion-empresas {
-  min-height: 40vh;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  color: #00ccf5;
-  background-color: #00ccf5; }
-
-.seccion-empresas .empresas-texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
-.seccion-empresas .empresas-texto h2 {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #ffff; }
-
-.seccion-empresas .empresas-texto p {
-  color: #ffff; }
-
-.seccion-empresas .empresas-iconos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10em;
-  margin-bottom: 4em; }
-
-.seccion-empresas .empresas-iconos i {
-  font-size: 5rem;
-  color: #000000; }
-
 /***************Seccion cursos*******************/
 .Nuestros-Cursos-proximos {
   min-height: 100vh;
@@ -488,103 +455,218 @@
 /*************Seccion trayectoria**************/
 .seccion-trayectoria-php {
   background-color: #ffff;
-  min-height: 100vh;
+  min-height: 75vh;
   color: #000000;
   display: grid;
-  grid-template-rows: 20% 80%; }
+  grid-template-rows: 12% 85%; }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-php {
+    grid-template-rows: 20% 80%; } }
 
 .seccion-trayectoria-php h2 {
   font-weight: bold;
-  font-size: 2.5rem;
-  margin-top: 1.5em;
+  font-size: 2rem;
   text-align: center; }
+
+@media (min-width: 992px) {
+  .seccion-trayectoria-php h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2em; }
+  .seccion-trayectoria-php h3 {
+    font-size: 2.5rem; } }
 
 .seccion-trayectoria-php span {
   color: #000000;
   border-bottom: 3.5px solid #00ccf5;
-  padding-bottom: .2em; }
+  padding-bottom: .1em; }
+
+@media (min-width: 480px) {
+  .seccion-trayectoria-php span {
+    padding-bottom: .2em; } }
 
 .seccion-trayectoria-php .trayectoria-contenido {
-  margin: 8em 3em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-php .trayectoria-contenido {
+    margin: 3em 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 .seccion-trayectoria-php .trayectoria-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
-  margin-left: 2em; }
+  gap: 1.5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em; }
+
+@media (min-width: 480px) {
+  .seccion-trayectoria-php .trayectoria-texto {
+    padding-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em; } }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-php .trayectoria-texto {
+    padding-top: 4em;
+    margin-left: 1.6em; } }
 
 .seccion-trayectoria-php .trayectoria-texto h3 {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  .seccion-trayectoria-php .trayectoria-texto h3 {
+    font-size: 1.2rem; } }
 
 .seccion-trayectoria-php .trayectoria-texto i {
-  margin-right: .5em;
-  font-size: 1.4rem;
+  padding-right: .5em;
+  font-size: 1.2rem;
   color: #00ccf5; }
 
+@media (min-width: 992px) {
+  .seccion-trayectoria-php .trayectoria-texto i {
+    font-size: 1.4rem; } }
+
+.seccion-trayectoria-php .trayectoria-texto span {
+  color: #000000;
+  border: none;
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  .seccion-trayectoria-php .trayectoria-texto span {
+    font-size: 1.1rem; } }
+
 .seccion-trayectoria-php .trayectoria-imagen {
+  margin: 2em 1.5em;
+  border: 1px solid #ffff;
+  border-radius: 60px;
+  height: 22em;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/img/pexels-canva-studio-3194523.jpg); }
+  background-image: url(/img/pexels-vanessa-garcia-6326175.jpg); }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-php .trayectoria-imagen {
+    margin-left: 2em;
+    margin-right: 3.5em; } }
 
 .seccion-trayectoria-todos {
-  box-shadow: 0px 15px 10px -15px #cfcece;
   background-color: #ffff;
   min-height: 75vh;
   color: #000000;
   display: grid;
-  grid-template-rows: 20% 80%; }
+  grid-template-rows: 17% 80%; }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-todos {
+    grid-template-rows: 20% 80%; } }
 
 .seccion-trayectoria-todos h2 {
   font-weight: bold;
   font-size: 2.5rem;
-  margin-top: 2em;
   text-align: center; }
 
 .seccion-trayectoria-todos .trayectoria-contenido {
-  margin: 2em .5em;
+  margin: 0 1em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-rows: auto 1fr; }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-todos .trayectoria-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 .seccion-trayectoria-todos .trayectoria-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em; }
+  gap: 1em;
+  padding-top: .5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  order: -1; }
+
+@media (min-width: 480px) {
+  .seccion-trayectoria-todos .trayectoria-texto {
+    padding-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em; } }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-todos .trayectoria-texto {
+    padding-top: 4em;
+    margin-left: 1.6em; } }
+
+@media (min-width: 992px) {
+  .seccion-trayectoria-todos .trayectoria-texto {
+    order: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 2em;
+    margin-right: 7em;
+    margin-left: 2.2em; } }
 
 .seccion-trayectoria-todos .trayectoria-texto h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold;
   color: #d814f2; }
 
 .seccion-trayectoria-todos .trayectoria-texto h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold; }
 
-.seccion-trayectoria-todos .trayectoria-texto p {
-  font-size: 1.2rem; }
+@media (min-width: 992px) {
+  .seccion-trayectoria-todos .trayectoria-texto h3 {
+    font-size: 1.5rem; } }
 
-.seccion-trayectoria-todos .trayectoria-texto .boton-todos {
-  display: flex;
-  justify-content: flex-end; }
+.seccion-trayectoria-todos .trayectoria-texto p {
+  font-size: 1rem; }
+
+@media (min-width: 992px) {
+  .seccion-trayectoria-todos .trayectoria-texto p {
+    font-size: 1.1rem; } }
 
 .seccion-trayectoria-todos .boton-todos a {
   border-radius: 10px;
   margin-right: .8em;
   padding: 1em 2em;
-  background-color: #8ff14e;
+  background-color: #00ccf5;
   font-weight: bold;
   color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   transition: .4s all; }
 
 .seccion-trayectoria-todos .boton-todos a:hover {
   color: #000000; }
 
+@media (min-width: 768px) {
+  .seccion-trayectoria-todos .boton-todos a {
+    width: 10em; } }
+
 .seccion-trayectoria-todos .trayectoria-imagen {
+  margin: 2em 1.5em;
+  border: 1px solid #ffff;
+  border-radius: 60px;
+  height: 17em;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/img/pexels-andrea-piacquadio-3769021.jpg); }
+
+@media (min-width: 768px) {
+  .seccion-trayectoria-todos .trayectoria-imagen {
+    height: 22em;
+    order: -1;
+    margin-left: 3.5em;
+    margin-right: 2em; } }
