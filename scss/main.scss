@@ -4,14 +4,61 @@
 
 
     &{
-        margin-top: 5em;
-        min-height:90vh;
+        margin-top: 3em;
+        min-height: 100vh;
         color: $negro;
         display: grid;
-        grid-template-rows: 40% 30%;
+        grid-template-rows: 19% 70%;
         background-color: $blanco;
+        margin-bottom: 0;
     }
 
+    @media (min-width: 480px) {
+        &{
+            margin-top: 5em;
+            min-height:90vh;
+            color: $negro;
+            display: grid;
+            grid-template-rows: 22% 70%;
+            background-color: $blanco;
+            margin-bottom: 7em;
+
+        }
+    }
+
+    @media (min-width: 992px) {
+        &{
+            margin-top: 5em;
+            min-height:90vh;
+            color: $negro;
+            display: grid;
+            grid-template-rows: 40% 30%;
+            background-color: $blanco;
+            margin-bottom: 0;
+        }
+    }
+    
+
+    @media (min-width: 1024px) {
+        &{
+            min-height: 85vh;
+            padding-top: 2em;
+        }
+    }
+
+}
+
+
+
+.contenedor-texto span{
+    display: block;
+    color: $negro;
+}
+
+@media (min-width: 480px) {
+    .contenedor-texto span{
+        display: initial;
+    }
 }
 
 .contenedor-texto {
@@ -22,23 +69,63 @@
     gap: 1em;
 }
 
+@media (min-width: 768px) {
+    .contenedor-texto {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
 
 .contenedor-texto_titulo {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-texto_titulo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 .contenedor-texto_parrafo {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #0c9bb8;
     font-weight: bold;
+    text-align: center;
+    margin: 1em 2em; 
+}
+
+@media (min-width: 768px) {
+    .contenedor-texto_parrafo {
+        font-size: inherit;
+        color: #0c9bb8;
+        font-weight: bold;
+        margin: 0 3em;
+
+    }
+    
 }
 
 .contenedor-contenido {
-    margin: auto 5em;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5em;
+    grid-template-rows: repeat(4,1fr);
+}
+
+@media (min-width: 992px) {
+    .contenedor-contenido {
+        text-align: inherit;
+        margin: auto 5em;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5em;
+    }
 }
 
 .contenedor-elemento_icono {
@@ -47,12 +134,35 @@
     margin-bottom: .5em;
     display: flex;
     justify-content: center;
-    padding-right: 1em;
+}
+
+@media (min-width: 992px) {
+    .contenedor-elemento_icono {
+        color: $colorTitulo;
+        font-size: 3rem;
+        margin-bottom: .5em;
+        display: flex;
+        justify-content: center;
+        padding-right: 1em;
+    }
 }
 
 .contenedor-elemento_parrafo {
     color: #797878;
     font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin: auto 5em 4em;
+}
+
+@media (min-width: 992px) {
+    .contenedor-elemento_parrafo {
+        color: #797878;
+        font-weight: bold;
+        font-size: inherit;
+        margin: 0;
+        text-align: inherit;
+    }
 }
 
 /*********************Seccion preguntas**********/
@@ -60,7 +170,8 @@
 .seccion-preguntas {
 
     h2 {
-        font-size: 1.7rem;
+        padding-top: 1.5em;
+        font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
     }
@@ -68,8 +179,10 @@
     @media (min-width: 480px){
 
         h2 {
-            font-size: 2.5rem;
+            padding-top: 0;
 
+            font-size: 2.5rem;
+            
         }
     
     }
@@ -82,20 +195,20 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 3em;
+        gap: 2em;
         overflow: hidden;
     }
 
     
     .contenedor-preguntas {
       width: 85%;
+      padding-bottom: 3em;
     }
 
     @media (min-width: 480px){
 
         .contenedor-preguntas {
             width: 85%;
-            height: 20em;
           }
     }
 

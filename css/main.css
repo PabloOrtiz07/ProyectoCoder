@@ -544,7 +544,7 @@ span {
 }
 
 .contenedor-front p , .contenedor-back p{
-    font-size: .85rem;
+    font-size: .9rem;
 }
 
 @media (min-width: 480px) {
@@ -1479,47 +1479,144 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 php.html**************************************/
 
 .main-php{
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: var(--negro);
 }
 
 .main-php-imagen {
     height: 100vh;
     background-image: url(/img//pexels-buro-millennial-1438081.jpg);
-    background-size: contain;
-    background-position: center left 425px ;
+    background-size: cover;
+    background-position: bottom -200px left -260px ;
     background-repeat: no-repeat;
 }
 
 .main-php-color {
     height: 100vh;
-    background-image: linear-gradient(to right, black 45%, transparent 100%);
+    background-image: linear-gradient(to bottom, black 30%, transparent 100%);
+}
+
+@media (min-width: 768px) {
+    .main-php{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-php-imagen {
+        height: 100vh;
+        background-image: url(/img//pexels-buro-millennial-1438081.jpg);
+        background-size: cover;
+        background-position: bottom 70px left 150px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-php-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-php{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-php-imagen {
+        height: 100vh;
+        background-image: url(/img//pexels-buro-millennial-1438081.jpg);
+        background-size: contain;
+        background-position: bottom 70px left 450px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-php-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
 }
 
 .main-php-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 8em;
-    padding-bottom: 5em;
-    gap: 1.5em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    padding-top: 1em;
+    gap: 1em;
     height: 100vh;
 }
 
+
+
+@media (min-width: 768px) {
+    .main-php-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-php-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
 .main-php-texto h2{
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
-.main-php-texto h3{
-    font-size: 2rem;
-    font-weight: bold;
+@media (min-width: 480px) {
+    .main-php-texto h2{
+        font-size: 2rem;
+    }
 }
+
+@media (min-width: 1024px) {
+    .main-php-texto h2{
+        font-size: 3rem;
+    }
+}
+
 
 .main-php-texto p{
-    font-size: 1.2rem;
-    margin-bottom: 1em;
+    font-size: 1rem;
+    margin-bottom: .5em;
     color: rgb(211, 206, 206);
+}
+
+@media (min-width: 480px) {
+    .main-php-texto p{
+        width: inherit;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-php-texto p{
+        width: inherit;
+        font-size: 1.1rem;
+        margin-bottom: 1em;
+        color: rgb(211, 206, 206);
+    }
 }
 
 .lista-php i{
@@ -1531,7 +1628,94 @@ php.html**************************************/
     padding-top: .2em;
 }
 .lista-php{
-    margin-bottom: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+.lista-php span{
+    font-size: .9rem;
+    color: var(--blanco);
+    font-weight: bold;
+
+}
+
+@media (min-width: 480px) {
+    .lista-php span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-php span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-php span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+    .lista-php{
+        margin-bottom: 2em;
+    }
+}
+
+.contenido-boton-php {
+    border: none;
+    background-color: var(--colorTitulo);
+    outline: inherit;
+    padding: .9em 2em;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: all 1s;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contenido-boton-php:hover {
+    color: var(--negro);
+
+}
+
+@media (min-width: 480px) {
+    .contenido-boton-php {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contenido-boton-php {
+        width: 25em;
+    }
+}
+
+
+@media (min-width: px) {
+    .contenido-boton-php {
+        padding: 1em 5em;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        transition: all 1s;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 40%;
+    }
 }
 
 /*****Seccion Aprenderas**************/
@@ -1546,19 +1730,60 @@ php.html**************************************/
 
 .contenido-aprenderas-herramientas {
     background-color: var(--negro);
-    height: 20em;
-    width: 80%;
+    box-shadow: 0px 15px 10px -15px rgb(19, 19, 19);    
+    height: 50em;
+    width: 95%;
     text-align: center;
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 65%;
     padding-top: 3em;
+}
+
+@media (min-width: 480px) {
+    .contenido-aprenderas-herramientas {
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contenido-aprenderas-herramientas {
+        height: 18em;
+        width: 95%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenido-aprenderas-herramientas {
+        height: 20em;
+        width: 80%;
+    }
+}
+
+.contenido-aprenderas-herramientas h2{
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .contenedor-herramientas {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8em;
+    gap: 2em;
+    flex-direction: column;
+}
+
+@media (min-width: 768px ) {
+    .contenedor-herramientas {
+        flex-direction: row;
+        gap: 7em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-herramientas {
+        gap: 8em;
+    }
 }
 
 .herramienta {
@@ -1575,14 +1800,19 @@ php.html**************************************/
     
 }
 
-
 /*Seccion del actividades*/
 
 .seccion-ventajas-php {
     background-color: var(--negro);
-    min-height: 80vh;
+    min-height: 50vh;
     box-shadow: 0px 15px 10px -15px rgb(110, 110, 110);    
 
+}
+
+@media (min-width: 480px) {
+    .seccion-ventajas-php {
+        min-height: 80vh;
+    }
 }
 
 .seccion-ventajas-php-parte-uno  {
@@ -1593,44 +1823,129 @@ php.html**************************************/
 .contenedor-seccion-ventajas-php-texto {
     color: var(--negro);
     position: relative;
-    width: 80%;
-    height: 35em;
-    background-color: white;
-    bottom: 5.5em;
-    border: 1px solid black;
+    width: 95%;
+    height: 25em;
+    background-color: var(--blanco);
+    bottom: 7em;
+    border: 1px solid var(--blanco);
     border-radius: 10px;
+}
+
+@media (min-width: 480px) {
+    .contenedor-seccion-ventajas-php-texto {
+        height: 30em;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-seccion-ventajas-php-texto {
+        width: 80%;
+        height: 33em;
+        bottom: 5.5em;
+    }
 }
 
 .contenedor-seccion-ventajas-php-texto h2 {
     margin-top: 1.5em;
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
 }
+
+@media (min-width: 480px) {
+    .contenedor-seccion-ventajas-php-texto h2 {
+        font-size: 2rem;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-seccion-ventajas-php-texto h2 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-seccion-ventajas-php-texto h2 {
+        font-size: 3rem;
+    }
+}
+
 
 .contenedor-programacion-php {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 1em;
+}
+
+@media (min-width: 768px) {
+    .contenedor-programacion-php {
+        gap: 10em;
+    } 
 }
 
 .contenedor-programacion-php i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--colorTitulo);
-  margin-bottom: .5em;
+  padding-bottom: .5em;
 } 
+
+@media (min-width: 768px) {
+    .contenedor-programacion-php i {
+        font-size: 1.5rem;
+      } 
+}
 
 .contenedor-front-php , .contenedor-back-php {
     text-align: center;
     width: 13em;
+    height: 20em;
 }
 
-.contenedor-front-php h3 , .contenedor-back-php h3{
+.contenedor-front-php span {
+    display: none;
+    color: var(--negro);
+}
+
+@media (min-width: 480px) {
+
+    .contenedor-front-php span {
+        display: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-front-php  {
+        width: 13em;
+        height: 10em;
+    }
+    .contenedor-front-php span {
+        display: inherit;
+    }
+}
+
+.contenedor-front-php h3 {
     margin-bottom: .5em;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
+}
+
+@media (min-width: 480px) {
+    .contenedor-front-php h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .contenedor-front-php h3 {
+        font-size: 1.6rem;
+    }
 }
 
 /**********Precios***********/
@@ -1885,48 +2200,6 @@ phyton.html**************************************/
     margin-bottom: 3.5em;
 }
 
-/*****Seccion Aprenderas**************/
-
-.seccion-aprenderas {
-    min-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
-    background-color: var(--blanco);
-
-}
-
-.contenido-aprenderas-herramientas {
-    background-color: var(--negro);
-    height: 20em;
-    width: 80%;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    padding-top: 3em;
-}
-
-.contenedor-herramientas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
-}
-
-.herramienta {
-    font-size: 4rem;
-}
-
-.herramienta h3 {
-    color: var(--gris);
-    font-size: 1.5rem;
-}
-
-.section-php {
-    min-height: 100vh;
-    
-}
 
 
 /************Seccion Proximos Cursos***************/
@@ -1991,46 +2264,7 @@ javascript.html**************************************/
     margin-bottom: 3.5em;
 }
 
-/*****Seccion Aprenderas**************/
 
-.seccion-aprenderas {
-    min-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
-}
-
-.contenido-aprenderas-herramientas {
-    background-color: var(--negro);
-    height: 20em;
-    width: 80%;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    padding-top: 3em;
-}
-
-.contenedor-herramientas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
-}
-
-.herramienta {
-    font-size: 4rem;
-}
-
-.herramienta h3 {
-    color: var(--gris);
-    font-size: 1.5rem;
-}
-
-.section-php {
-    min-height: 100vh;
-    
-}
 
 /*Seccion del actividades*/
 
