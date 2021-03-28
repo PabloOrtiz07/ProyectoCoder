@@ -1527,8 +1527,6 @@ php.html**************************************/
     }
     
     .main-php-imagen {
-        height: 100vh;
-        background-image: url(/img//pexels-buro-millennial-1438081.jpg);
         background-size: contain;
         background-position: bottom 70px left 450px ;
         background-repeat: no-repeat;
@@ -2236,47 +2234,141 @@ phyton.html**************************************/
 javascript.html**************************************/
 
 .main-javascript{
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: var(--negro);
 }
 
 .main-javascript-imagen {
     height: 100vh;
     background-image: url(/img/pexels-thisisengineering-3861961\ \(1\).jpg);
-    background-size: contain;
-    background-position: center left 425px ;
+    background-size: cover;
+    background-position: bottom -320px left -280px ;
     background-repeat: no-repeat;
 }
 
 .main-javascript-color {
     height: 100vh;
-    background-image: linear-gradient(to right, black 30%, transparent 100%);
+    background-image: linear-gradient(to bottom, black 30%, transparent 100%);
+}
+
+@media (min-width: 768px) {
+    .main-javascript{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-javascript-imagen {
+        height: 100vh;
+        background-size: cover;
+        background-position: bottom 70px left 150px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-javascript-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-javascript{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-javascript-imagen {
+        background-size: contain;
+        background-position: bottom 70px left 450px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-javascript-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
 }
 
 .main-javascript-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 8em;
-    padding-bottom: 5em;
-    gap: 1.5em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    padding-top: 1em;
+    gap: 1em;
     height: 100vh;
 }
 
+
+
+@media (min-width: 768px) {
+    .main-javascript-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-javascript-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
 .main-javascript-texto h2{
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
-.main-javascript-texto h3{
-    font-size: 2rem;
-    font-weight: bold;
+@media (min-width: 480px) {
+    .main-javascript-texto h2{
+        font-size: 2rem;
+    }
 }
+
+@media (min-width: 1024px) {
+    .main-javascript-texto h2{
+        font-size: 3rem;
+    }
+}
+
 
 .main-javascript-texto p{
-    font-size: 1.2rem;
-    margin-bottom: 1em;
+    font-size: 1rem;
+    margin-bottom: .5em;
     color: rgb(211, 206, 206);
+}
+
+@media (min-width: 480px) {
+    .main-javascript-texto p{
+        width: inherit;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-javascript-texto p{
+        width: inherit;
+        font-size: 1.1rem;
+        margin-bottom: 1em;
+        color: rgb(211, 206, 206);
+    }
 }
 
 .lista-javascript i{
@@ -2288,11 +2380,96 @@ javascript.html**************************************/
     padding-top: .2em;
 }
 .lista-javascript{
-    margin-bottom: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+.lista-javascript span{
+    font-size: .9rem;
+    color: var(--blanco);
+    font-weight: bold;
+
+}
+
+@media (min-width: 480px) {
+    .lista-javascript span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-javascript span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-javascript span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
 }
 
 
+@media (min-width: 1024px) {
+    .lista-javascript{
+        margin-bottom: 2em;
+    }
+}
 
+.contenido-boton-javascript {
+    border: none;
+    background-color: var(--colorTitulo);
+    outline: inherit;
+    padding: .9em 2em;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: all 1s;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contenido-boton-javascript:hover {
+    color: var(--negro);
+
+}
+
+@media (min-width: 480px) {
+    .contenido-boton-javascript {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contenido-boton-javascript {
+        width: 25em;
+    }
+}
+
+
+@media (min-width: px) {
+    .contenido-boton-javascript {
+        padding: 1em 5em;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        transition: all 1s;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 40%;
+    }
+
+}
 /*Seccion del actividades*/
 
 .seccion-ventajas-phyton {
