@@ -438,10 +438,16 @@ span {
     position: relative;
     top: -.5em;
     width: 100%;
-    height: 30em;
+    height: 27em;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     padding-right: 1em;
     padding-left: 1em;
+}
+
+@media (min-width: 488px) {
+    .contenedor-seccion-ventajas-texto {
+        height: 30em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1764,6 +1770,7 @@ php.html**************************************/
 .contenido-aprenderas-herramientas h2{
     font-size: 1.7rem;
     font-weight: bold;
+    margin: 0 2em ; 
 }
 
 .contenedor-herramientas {
