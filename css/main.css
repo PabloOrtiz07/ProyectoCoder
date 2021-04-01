@@ -1766,6 +1766,8 @@ php.html**************************************/
 .contenido-aprenderas-herramientas h2{
     font-size: 1.7rem;
     font-weight: bold;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .contenedor-herramientas {
