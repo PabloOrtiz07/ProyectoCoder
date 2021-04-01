@@ -2169,61 +2169,392 @@ php.html**************************************/
 **********************************************
 phyton.html**************************************/
 
-.main-phyton{
-    min-height: 100vh;
+.main-python{
+    min-height: 80vh;
     background-color: var(--negro);
 }
 
-.main-phyton-imagen {
+.main-python-imagen {
     height: 100vh;
     background-image: url(/img/pexels-vlada-karpovich-4050301.jpg);
-    background-size: contain;
-    background-position: center left 425px ;
+    background-size: cover;
+    background-position: bottom -350px left -450px ;
     background-repeat: no-repeat;
 }
 
-.main-phyton-color {
+.main-python-color {
     height: 100vh;
-    background-image: linear-gradient(to right, black 30%, transparent 100%);
+    background-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
 
-.main-phyton-texto {
+@media (min-width: 768px) {
+    .main-python{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-python-imagen {
+        height: 100vh;
+        background-image: url(/img/pexels-vlada-karpovich-4050301.jpg);
+        background-size: cover;
+        background-position: bottom 70px left 150px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-python-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-python{
+        min-height: 100vh;
+        background-color: var(--negro);
+    }
+    
+    .main-python-imagen {
+        background-size: contain;
+        background-position: bottom 70px left 450px ;
+        background-repeat: no-repeat;
+    }
+    
+    .main-python-color {
+        height: 100vh;
+        background-image: linear-gradient(to right, black 35%, transparent 100%);
+    }
+    
+}
+
+.main-python-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 8em;
-    padding-bottom: 5em;
-    gap: 1.5em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    padding-top: 1em;
+    gap: 1em;
     height: 100vh;
 }
 
-.main-phyton-texto h2{
-    font-size: 3rem;
+
+
+@media (min-width: 768px) {
+    .main-python-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .main-python-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 7em;
+        padding-bottom: 8em;
+        padding-top: 0;
+        margin-right: 0;
+        gap: 1.5em;
+        height: 100vh;
+    }
+    
+}
+
+.main-python-texto h2{
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
-.main-phyton-texto h3{
-    font-size: 2rem;
-    font-weight: bold;
+@media (min-width: 480px) {
+    .main-python-texto h2{
+        font-size: 2rem;
+    }
 }
 
-.main-phyton-texto p{
-    font-size: 1.2rem;
-    margin-bottom: 1em;
+@media (min-width: 1024px) {
+    .main-python-texto h2{
+        font-size: 3rem;
+    }
+}
+
+
+.main-python-texto p{
+    font-size: 1rem;
+    margin-bottom: .5em;
     color: rgb(211, 206, 206);
 }
 
-.lista-phyton i{
+@media (min-width: 480px) {
+    .main-python-texto p{
+        width: inherit;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-python-texto p{
+        width: inherit;
+        font-size: 1.1rem;
+        margin-bottom: 1em;
+        color: rgb(211, 206, 206);
+    }
+}
+
+.lista-python i{
     color: var(--colorTitulo);
     padding-right: .2em;
 }
 
-.lista-phyton li{
+.lista-python li{
     padding-top: .2em;
 }
-.lista-phyton{
-    margin-bottom: 3.5em;
+.lista-python{
+    margin-bottom: 1.5em;
 }
+
+.lista-python span{
+    font-size: .9rem;
+    color: var(--blanco);
+    font-weight: bold;
+
+}
+
+@media (min-width: 480px) {
+    .lista-python span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-python span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .lista-python span{
+        font-size: inherit;
+        color: var(--blanco);
+        font-weight: bold;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+    .lista-python{
+        margin-bottom: 2em;
+    }
+}
+
+.contenido-boton-python {
+    border: none;
+    background-color: var(--colorTitulo);
+    outline: inherit;
+    padding: .9em 2em;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: all 1s;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contenido-boton-python:hover {
+    color: var(--negro);
+
+}
+
+@media (min-width: 480px) {
+    .contenido-boton-python {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contenido-boton-python {
+        width: 25em;
+    }
+}
+
+
+@media (min-width: px) {
+    .contenido-boton-python {
+        padding: 1em 5em;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        transition: all 1s;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 40%;
+    }
+}
+
+/*Seccion del actividades*/
+
+.seccion-ventajas- {
+    background-color: var(--negro);
+    min-height: 50vh;
+    box-shadow: 0px 15px 10px -15px rgb(110, 110, 110);    
+
+}
+
+@media (min-width: 480px) {
+    .seccion-ventajas- {
+        min-height: 80vh;
+    }
+}
+
+.seccion-ventajas--parte-uno  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-seccion-ventajas--texto {
+    color: var(--negro);
+    position: relative;
+    width: 95%;
+    height: 25em;
+    background-color: var(--blanco);
+    bottom: 7em;
+    border: 1px solid var(--blanco);
+    border-radius: 10px;
+}
+
+@media (min-width: 480px) {
+    .contenedor-seccion-ventajas--texto {
+        height: 30em;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-seccion-ventajas--texto {
+        width: 80%;
+        height: 33em;
+        bottom: 5.5em;
+    }
+}
+
+.contenedor-seccion-ventajas--texto h2 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .contenedor-seccion-ventajas--texto h2 {
+        font-size: 2rem;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-seccion-ventajas--texto h2 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-seccion-ventajas--texto h2 {
+        font-size: 3rem;
+    }
+}
+
+
+.contenedor-programacion- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+@media (min-width: 768px) {
+    .contenedor-programacion- {
+        gap: 10em;
+    } 
+}
+
+.contenedor-programacion- i {
+  font-size: 1.4rem;
+  color: var(--colorTitulo);
+  padding-bottom: .5em;
+} 
+
+@media (min-width: 768px) {
+    .contenedor-programacion- i {
+        font-size: 1.5rem;
+      } 
+}
+
+.contenedor-front- , .contenedor-back- {
+    text-align: center;
+    width: 13em;
+    height: 20em;
+}
+
+.contenedor-front- span {
+    display: none;
+    color: var(--negro);
+}
+
+@media (min-width: 480px) {
+
+    .contenedor-front- span {
+        display: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor-front-  {
+        width: 13em;
+        height: 10em;
+    }
+    .contenedor-front- span {
+        display: inherit;
+    }
+}
+
+.contenedor-front- h3 {
+    margin-bottom: .5em;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media (min-width: 480px) {
+    .contenedor-front- h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .contenedor-front- h3 {
+        font-size: 1.6rem;
+    }
+}
+
 
 
 

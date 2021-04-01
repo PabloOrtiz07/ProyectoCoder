@@ -15,7 +15,7 @@
     display: grid;
     grid-template-rows: 22% 70%;
     background-color: #ffff;
-    margin-bottom: 7em; } }
+    margin-bottom: 4em; } }
 
 @media (min-width: 992px) {
   .caracteristicas-php {
